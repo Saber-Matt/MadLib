@@ -16,20 +16,20 @@ const pronoun2 = document.getElementById('pronoun-2');
 const madlibButton = document.getElementById('button');
 
 // FOR DISPLAY FUNC
-const lyricDisplay1 = document.getElementById('plural-noun-1-input');
-const lyricDisplay2 = document.getElementById('noun-2-place-input');
-const lyricDisplay3 = document.getElementById('verb-1-input');
-const lyricDisplay4 = document.getElementById('adjective-1-input');
-const lyricDisplay5 = document.getElementById('pronoun-1-input');
-const lyricDisplay6 = document.getElementById('verb-2-input');
-const lyricDisplay7 = document.getElementById('noun-3-input');
+const lyricDisplay1 = document.getElementById('plural-noun-1');
+const lyricDisplay2 = document.getElementById('noun-2-place');
+const lyricDisplay3 = document.getElementById('verb-1');
+const lyricDisplay4 = document.getElementById('adjective-1');
+const lyricDisplay5 = document.getElementById('pronoun-1');
+const lyricDisplay6 = document.getElementById('verb-2');
+const lyricDisplay7 = document.getElementById('noun-3');
 const lyricDisplay8 = document.getElementById('kid');
 const lyricDisplay9 = document.getElementById('pronoun-2');
 
 
 madlibButton.addEventListener('click', () => {
   //when btn click do this
-
+  console.log('button clicked');
     lyricDisplay1.textContent = pluralNoun.value;
     lyricDisplay2.textContent = nounPlace.value;
     lyricDisplay3.textContent = verb1.value;
@@ -39,5 +39,6 @@ madlibButton.addEventListener('click', () => {
     lyricDisplay7.textContent = noun3.value;
     lyricDisplay8.textContent = kid.value;
     lyricDisplay9.textContent = pronoun2.value;
+    
 
 });
