@@ -10,8 +10,8 @@ const adjective1 = document.getElementById('adjective-1-input');
 const pronoun1 = document.getElementById('pronoun-1-input');
 const verb2 = document.getElementById('verb-2-input');
 const noun3 = document.getElementById('noun-3-input');
-const kid = document.getElementById('kid');
-const pronoun2 = document.getElementById('pronoun-2');
+const kid = document.getElementById('kid-input');
+const pronoun2 = document.getElementById('pronoun-2-input');
 
 const madlibButton = document.getElementById('button');
 
@@ -38,6 +38,7 @@ madlibButton.addEventListener('click', () => {
     lyricDisplay6.textContent = verb2.value;
     lyricDisplay7.textContent = noun3.value;
     lyricDisplay8.textContent = kid.value;
+    console.log('cnsdcnjskvn');
     lyricDisplay9.textContent = pronoun2.value;
     
 
