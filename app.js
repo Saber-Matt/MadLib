@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+import { sync } from './dom-utilities.js';
 
 // initialize state
 
@@ -32,26 +33,29 @@ const lyricDisplay10 = document.getElementById('adjective-2');
 
 
 madlibButton.addEventListener('click', () => {
+    for (i = 0; i < 10; i++){
   //when btn click do this
-    console.log('button clicked');
-    lyricDisplay1.textContent = pluralNoun.value;
-    lyricDisplay2.textContent = nounPlace.value;
-    lyricDisplay3.textContent = verb1.value;
-    lyricDisplay4.textContent = adjective1.value;
-    lyricDisplay5.textContent = pronoun1.value;
-    lyricDisplay6.textContent = verb2.value;
-    lyricDisplay7.textContent = noun3.value;
-    lyricDisplay8.textContent = kid.value;
-    console.log('cnsdcnjskvn');
-    lyricDisplay9.textContent = pronoun2.value;
-    lyricDisplay10.textContent = adjective2.value;
-    const hidden = document.getElementById('hidden');
-    if (hidden.style.display === 'none') {
-      hidden.style.display = "block";
-    } else {
-      hidden.style.display = "none";
-    }
+        console.log('button clicked');
+        lyricDisplay1.textContent = pluralNoun.value;
+        lyricDisplay2.textContent = nounPlace.value;
+        lyricDisplay3.textContent = verb1.value;
+        lyricDisplay4.textContent = adjective1.value;
+        lyricDisplay5.textContent = pronoun1.value;
+        lyricDisplay6.textContent = verb2.value;
+        lyricDisplay7.textContent = noun3.value;
+        lyricDisplay8.textContent = kid.value;
+        lyricDisplay9.textContent = pronoun2.value;
+        lyricDisplay10.textContent = adjective2.value;
+        const inputElement = document.getElementById(`input-${i}`);
+        const spanElement = document.getElementById(`span-${i}`);
+
+        const hidden = document.getElementById('hidden');
+        if (hidden.style.display === 'none') {
+            hidden.style.display = 'none';
+        } else {
+            hidden.style.display = 'block';
+        }
 
     
 
-});
+    }});
