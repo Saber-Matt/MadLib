@@ -12,6 +12,8 @@ const verb2 = document.getElementById('verb-2-input');
 const noun3 = document.getElementById('noun-3-input');
 const kid = document.getElementById('kid-input');
 const pronoun2 = document.getElementById('pronoun-2-input');
+const adjective2 = document.getElementById('adjective-2-input');
+
 
 const madlibButton = document.getElementById('button');
 
@@ -25,11 +27,13 @@ const lyricDisplay6 = document.getElementById('verb-2');
 const lyricDisplay7 = document.getElementById('noun-3');
 const lyricDisplay8 = document.getElementById('kid');
 const lyricDisplay9 = document.getElementById('pronoun-2');
+const lyricDisplay10 = document.getElementById('adjective-2');
+
 
 
 madlibButton.addEventListener('click', () => {
   //when btn click do this
-  console.log('button clicked');
+    console.log('button clicked');
     lyricDisplay1.textContent = pluralNoun.value;
     lyricDisplay2.textContent = nounPlace.value;
     lyricDisplay3.textContent = verb1.value;
@@ -40,6 +44,14 @@ madlibButton.addEventListener('click', () => {
     lyricDisplay8.textContent = kid.value;
     console.log('cnsdcnjskvn');
     lyricDisplay9.textContent = pronoun2.value;
+    lyricDisplay10.textContent = adjective2.value;
+    const hidden = document.getElementById('hidden');
+    if (hidden.style.display === 'none') {
+      hidden.style.display = "block";
+    } else {
+      hidden.style.display = "none";
+    }
+
     
 
 });
